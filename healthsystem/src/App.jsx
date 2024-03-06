@@ -1,7 +1,9 @@
 // App.jsx
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import { VideoPlayer } from "./components/VideoPlayer";
+import { VideoRoom } from "./components/VideoRoom";
 
 const Home = () => <div>Home</div>;
 const About = () => <div>About</div>;
@@ -18,6 +20,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/video-room" element={<VideoRoom />} />
         </Routes>
       </div>
     </Router>
@@ -25,4 +28,3 @@ const App = () => {
 };
 
 export default App;
-
